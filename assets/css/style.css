@@ -1,6 +1,12 @@
-/*[TMT]     Splash Screen Truy Cập */
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 20px;
+}
 
-.intro {
+/*[TMT]     Splash Screen Truy Cập */
+hehe .intro {
   position: fixed;
   z-index: 1;
   left: 0;
@@ -41,4 +47,182 @@
   bottom: 150px;
   opacity: 0;
   transition: ease-in-out 0.5s;
+}
+
+/* --- Định dạng thanh điều hướng chính --- */
+.navbar {
+  display: flex;
+  border-radius: 999px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c3e50;
+  padding: 0 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  gap: 20px;
+}
+
+/* --- Định dạng Logo --- */
+.navbar__logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 15px 0;
+  background: linear-gradient(
+    45deg,
+    #ef4444,
+    #ff6700,
+    #f97316,
+    #ffac00,
+    #eab308,
+    #a7d129,
+    #22c55e,
+    #00a8e8,
+    #3b82f6,
+    #6a4c93,
+    #8b5cf6,
+    #c72c9b,
+    #ec4899,
+    #ef4444
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 400% auto;
+  animation: gradient-animation 5s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* --- Vùng chứa các liên kết --- */
+.navbar__links {
+  display: flex; /* Sắp xếp các mục menu nằm ngang */
+}
+
+/* --- Định dạng chung cho các liên kết --- */
+.navbar__links a {
+  color: #ecf0f1;
+  text-decoration: none;
+  padding: 20px 15px;
+  display: block; /* Giúp padding hoạt động đúng */
+  transition: background-color 0.3s;
+}
+
+/* --- Hiệu ứng khi di chuột qua liên kết --- */
+.navbar__links a:hover,
+.dropdown:hover .dropdown__toggle {
+  color: #00ff15;
+}
+
+/* --- Định dạng cho liên kết đang "active" --- */
+.navbar__links a.active {
+  color: #3498db;
+  font-weight: bold;
+}
+
+/* --- Bắt đầu phần quan trọng cho Dropdown --- */
+
+/* Vùng chứa dropdown */
+.dropdown {
+  position: relative; /* Rất quan trọng! Để dropdown__content định vị theo nó */
+}
+
+/* Nội dung dropdown (mặc định bị ẩn) */
+.dropdown__content {
+  display: none; /* Ẩn menu con đi */
+  position: absolute; /* Giúp menu nổi lên trên nội dung khác */
+  top: 100%; /* Hiển thị ngay bên dưới mục cha */
+  left: 0;
+  background-color: #ffffff;
+  min-width: 200px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1; /* Đảm bảo menu luôn nằm trên cùng */
+  border-radius: 0 0 5px 5px;
+  overflow: hidden; /* Bo tròn góc cho đẹp */
+}
+
+/* Các liên kết bên trong dropdown */
+.dropdown__content a {
+  color: #333333; /* Màu chữ tối hơn trên nền trắng */
+  padding: 12px 16px;
+  text-align: left;
+}
+
+/* Hiệu ứng khi di chuột qua các mục trong dropdown */
+.dropdown__content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* --- PHÉP THUẬT XẢY RA Ở ĐÂY --- */
+/* Khi di chuột vào .dropdown, thì .dropdown__content bên trong nó sẽ hiện ra */
+.dropdown:hover .dropdown__content {
+  display: block; /* Hiện menu con */
+}
+
+/* --- Vùng chứa các hành động (search, cart, user) --- */
+.navbar__actions {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Khoảng cách giữa các mục hành động */
+}
+
+/* --- Định dạng ô tìm kiếm --- */
+.search-box {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 2px 5px;
+  overflow: hidden; /* Đảm bảo nút nằm gọn trong ô */
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  padding: 8px 10px;
+  font-size: 14px;
+  background: none;
+}
+
+.search-box button {
+  background-color: #3498db;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.search-box button:hover {
+  background-color: #2980b9;
+}
+
+/* --- Định dạng cho các biểu tượng (cart, user) --- */
+.action-icon {
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.action-icon:hover {
+  background-color: #34495e;
 }
