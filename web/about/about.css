@@ -4,51 +4,6 @@ body {
   padding: 10px;
 }
 
-/*[TMT]     Splash Screen Truy Cập */
-.intro {
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: #161616;
-  transition: 1s;
-}
-
-.welcome__header {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-}
-
-.color__text__intro {
-  color: #3498db;
-  font-size: 80px;
-}
-
-.welcome__text {
-  position: relative;
-  display: inline-block;
-  bottom: -20px;
-  opacity: 0;
-}
-
-.welcome__text.active {
-  bottom: 0;
-  opacity: 1;
-  transition: ease-in-out 0.7s;
-}
-
-.welcome__text.fade {
-  bottom: 150px;
-  opacity: 0;
-  transition: ease-in-out 0.7s;
-}
-
-/* --- Định dạng thanh điều hướng chính --- */
 .navbar {
   display: flex;
   border-radius: 900px;
