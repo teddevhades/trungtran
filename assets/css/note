@@ -1,0 +1,23 @@
+.buynow {
+  background: linear-gradient(to right, #49e7ff, #08ff2d);
+  color: white;
+}
+.buynow:hover {
+  background: linear-gradient(to right, #0ea5e9, #2563eb);
+}
+.buynow-sm {
+  background: #1e293b;
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 16px;
+}
+.buynow-sm:hover {
+  background: #334155;
+}
+.buynow-white {
+  background: white;
+  color: #0f172a;
+}
+.buynow-white:hover {
+  background: #e2e8f0;
+}
