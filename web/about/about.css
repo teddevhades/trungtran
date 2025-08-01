@@ -1,4 +1,5 @@
-/* Reset và thiết lập cơ bản */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -6,10 +7,11 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Roboto Slab", serif;
   background-color: #0f172a;
   color: #ffffff;
   line-height: 1.6;
+  padding: 20px;
 }
 
 .navbar {
@@ -24,7 +26,6 @@ body {
   height: 60px;
 }
 
-/* --- Định dạng Logo --- */
 .navbar__logo {
   font-size: 28px;
   font-weight: bold;
@@ -73,7 +74,6 @@ body {
   display: flex;
 }
 
-/* --- Định dạng chung cho các liên kết --- */
 .navbar__links a {
   color: #d1d5db;
   text-decoration: none;
@@ -82,13 +82,11 @@ body {
   transition: background-color 0.3s;
 }
 
-/* --- hover effect --- */
 .navbar__links a:hover,
 .dropdown:hover .dropdown__toggle {
   color: #38bcf7;
 }
 
-/* --- active trang đang ở --- */
 .navbar__links a.active {
   color: #38bcf7;
 }
@@ -116,24 +114,20 @@ body {
   text-align: center;
 }
 
-/* hover eff */
 .dropdown__content a:hover {
   background-color: #f1f1f1;
 }
 
-/* --- dropdown eff--- */
 .dropdown:hover .dropdown__content {
   display: block;
 }
 
-/* --- Vùng chứa các hành động (search, cart, user) --- */
 .navbar__actions {
   display: flex;
   align-items: center;
-  gap: 15px; /* Khoảng cách giữa các mục hành động */
+  gap: 15px;
 }
 
-/* --- Định dạng ô tìm kiếm --- */
 .search__box {
   display: flex;
   align-items: center;
@@ -175,7 +169,6 @@ body {
   background-color: #2980b9;
 }
 
-/* --- Định dạng cho các biểu tượng (cart, user) --- */
 .action__icon {
   color: #ffffff;
   font-size: 20px;
@@ -197,7 +190,7 @@ body {
 .navbar__links a::after {
   content: "";
   position: absolute;
-  bottom: 12px; /* chỉnh vị trí đường gạch cho đẹp */
+  bottom: 12px;
   left: 50%;
   transform: translateX(-50%) scaleX(0);
   transform-origin: center;
@@ -251,7 +244,7 @@ body {
   align-items: center;
 }
 
-/* ========== HERO ========== */
+/* [TMT] hero */
 .hero {
   display: flex;
   justify-content: space-between;
@@ -277,7 +270,7 @@ body {
   color: #94a3b8;
 }
 
-/* ========== ABOUT ========== */
+/* [TMT] ab */
 .about {
   display: flex;
   justify-content: space-between;
@@ -317,7 +310,7 @@ body {
   text-align: center;
 }
 
-/* ========== PRODUCTS ========== */
+/* [TMT] pd */
 .products {
   text-align: center;
   padding: 80px 10%;
@@ -366,7 +359,7 @@ body {
   font-size: 14px;
 }
 
-/* ========== WHY CHOOSE US ========== */
+/* [TMT] wcs */
 .why {
   padding: 80px 10%;
   background-color: #1e293b;
@@ -404,7 +397,7 @@ body {
   color: #cbd5e1;
 }
 
-/* ========== FOOTER ========== */
+/* [TMT] ft */
 .footer {
   background-color: #0f172a;
   padding: 60px 10% 30px;

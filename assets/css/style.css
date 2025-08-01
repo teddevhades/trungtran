@@ -1,7 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Inter", sans-serif;
   margin: 0;
-  padding: 10px;
+  padding: 20px;
+  line-height: 1.6;
+  background: #0f172a;
+  color: #f1f5f9;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /*[TMT]     Splash Screen Truy Cập */
@@ -48,20 +62,20 @@ body {
   transition: ease-in-out 0.7s;
 }
 
-/* --- Định dạng thanh điều hướng chính --- */
+/* --- [TMT] Định dạng thanh điều hướng chính --- */
 .navbar {
   display: flex;
   border-radius: 900px;
   justify-content: space-between;
   align-items: center;
-  background-color: #111827;
+  background-color: #171717;
   padding: 0 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   gap: 20px;
   height: 60px;
 }
 
-/* --- Định dạng Logo --- */
+/* --- [TMT] Định dạng Logo --- */
 .navbar__logo {
   font-size: 28px;
   font-weight: bold;
@@ -110,7 +124,7 @@ body {
   display: flex;
 }
 
-/* --- Định dạng chung cho các liên kết --- */
+/* --- [TMT] Định dạng chung cho các liên kết --- */
 .navbar__links a {
   color: #d1d5db;
   text-decoration: none;
@@ -119,13 +133,13 @@ body {
   transition: background-color 0.3s;
 }
 
-/* --- hover effect --- */
+/* --- [TMT] hover effect --- */
 .navbar__links a:hover,
 .dropdown:hover .dropdown__toggle {
   color: #38bcf7;
 }
 
-/* --- active trang đang ở --- */
+/* --- [TMT] active trang đang ở --- */
 .navbar__links a.active {
   color: #38bcf7;
 }
@@ -153,24 +167,24 @@ body {
   text-align: center;
 }
 
-/* hover eff */
+/* [TMT] hover eff */
 .dropdown__content a:hover {
   background-color: #f1f1f1;
 }
 
-/* --- dropdown eff--- */
+/* --- [TMT] dropdown eff--- */
 .dropdown:hover .dropdown__content {
   display: block;
 }
 
-/* --- Vùng chứa các hành động (search, cart, user) --- */
+/* --- [TMT] action cho giỏ hàng, tìm kiếm, đn --- */
 .navbar__actions {
   display: flex;
   align-items: center;
-  gap: 15px; /* Khoảng cách giữa các mục hành động */
+  gap: 15px;
 }
 
-/* --- Định dạng ô tìm kiếm --- */
+/* --- [TMT] ô search--- */
 .search__box {
   display: flex;
   align-items: center;
@@ -212,7 +226,7 @@ body {
   background-color: #2980b9;
 }
 
-/* --- Định dạng cho các biểu tượng (cart, user) --- */
+/* --- [TMT] action gh, đn --- */
 .action__icon {
   color: #ffffff;
   font-size: 20px;
@@ -226,6 +240,8 @@ body {
   background-color: #34495e;
 }
 
+/* [TMT] eff khi di hover qua phần tử */
+
 .navbar__links a {
   position: relative;
   overflow: hidden;
@@ -234,7 +250,7 @@ body {
 .navbar__links a::after {
   content: "";
   position: absolute;
-  bottom: 12px; /* chỉnh vị trí đường gạch cho đẹp */
+  bottom: 12px;
   left: 50%;
   transform: translateX(-50%) scaleX(0);
   transform-origin: center;
@@ -246,4 +262,154 @@ body {
 
 .navbar__links a:hover::after {
   transform: translateX(-50%) scaleX(1);
+}
+
+/* HERO */
+.hero {
+  background: url("/assets/img/123.png") no-repeat center center/cover;
+  padding: 120px 40px;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+.gradient-text {
+  background: linear-gradient(to right, #22d3ee, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero p {
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+/* DANH MỤC */
+.category {
+  padding: 60px 40px;
+  text-align: center;
+}
+.category h2 {
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.category-item {
+  background: #1e293b;
+  padding: 20px 40px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.category-item:hover {
+  background: #334155;
+}
+
+/* SẢN PHẨM */
+.products {
+  padding: 60px 40px;
+  text-align: center;
+}
+.products h2 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+.products p {
+  font-size: 16px;
+  color: #94a3b8;
+  margin-bottom: 32px;
+}
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+.product {
+  background: #1e293b;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+}
+.product h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.product p {
+  font-size: 14px;
+  color: #cbd5e1;
+  margin-bottom: 8px;
+}
+.product strong {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #38bdf8;
+}
+
+/* KHUYẾN MÃI */
+.promotion {
+  background: #22d3ee;
+  color: #0f172a;
+  text-align: center;
+  padding: 60px 40px;
+}
+.promotion h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.promotion p {
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+/* FOOTER */
+.footer {
+  background: #1e293b;
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer-left {
+  max-width: 300px;
+}
+.footer-left .logo {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.footer-left .logo span {
+  color: #22d3ee;
+}
+.footer-right {
+  display: flex;
+  gap: 40px;
+}
+.footer-col h4 {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+.footer-col a {
+  display: block;
+  color: #cbd5e1;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+.footer-col a:hover {
+  text-decoration: underline;
+}
+.footer .copyright {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 13px;
+  color: #94a3b8;
 }
