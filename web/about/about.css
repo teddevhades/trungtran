@@ -419,11 +419,11 @@ body {
 }
 
 .footer-right {
-  flex: 2;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 30px;
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  gap: 80px; /* Khoảng cách đều giữa các cột */
+  flex-wrap: wrap; /* Cho responsive nếu màn hình nhỏ */
+  text-align: left; /* Canh trái nội dung bên trong */
 }
 
 .footer-col {

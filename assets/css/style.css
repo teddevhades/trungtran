@@ -355,7 +355,7 @@ a {
 
 /* KHUYẾN MÃI */
 .promotion {
-  background: #22d3ee;
+  background: #1b8898;
   color: #0f172a;
   text-align: center;
   padding: 60px 40px;
@@ -391,7 +391,10 @@ a {
 }
 .footer-right {
   display: flex;
-  gap: 40px;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+  text-align: left;
 }
 .footer-col h4 {
   font-size: 16px;
