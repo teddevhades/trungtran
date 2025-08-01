@@ -270,11 +270,11 @@
   width: 60%;
   height: 2px;
   background-color: #38bcf7;
-  transition: transform 0.3s ease;
+  transition: transform 0.35s ease;
 }
 
 .navbar__links a:hover::after {
-  transform: translateX(-50%) scaleX(1);
+  transform: translateX(-50%) scaleX(0.8);
 }
 
 /* bắt đầu phần nội dung */
