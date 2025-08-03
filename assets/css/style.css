@@ -8,6 +8,8 @@
   background-color: #1d1f20;
 }
 
+/*[TMT]     Splash Screen Truy Cập */
+
 .intro {
   position: fixed;
   z-index: 1;
@@ -51,6 +53,8 @@
   transition: ease-in-out 0.7s;
 }
 
+/* --- [TMT] Định dạng thanh điều hướng chính --- */
+
 .navbar {
   display: flex;
   border-radius: 600px;
@@ -76,6 +80,8 @@
   transform: translateY(-100%);
   pointer-events: none;
 }
+
+/* --- [TMT] Định dạng Logo --- */
 
 .navbar__logo {
   font-size: 28px;
@@ -128,7 +134,7 @@
     background-position: 0% 50%;
   }
 }
-
+/* --- [TMT] Định dạng chung cho các liên kết trên navbar --- */
 .navbar__links {
   display: flex;
 }
@@ -141,11 +147,13 @@
   transition: background-color 0.3s;
 }
 
+/* --- [TMT] hover effect --- */
 .navbar__links a:hover,
 .dropdown:hover .dropdown__toggle {
   color: #38bcf7;
 }
 
+/* --- [TMT] active trang đang ở --- */
 .navbar__links a.active {
   color: #38bcf7;
 }
@@ -177,16 +185,18 @@
   background-color: #f1f1f1;
 }
 
+/* --- [TMT] dropdown eff--- */
 .dropdown:hover .dropdown__content {
   display: block;
 }
 
+/* --- [TMT] action cho giỏ hàng, tìm kiếm, đn --- */
 .navbar__actions {
   display: flex;
   align-items: center;
   gap: 15px;
 }
-
+/* --- [TMT] ô search--- */
 .search__box {
   display: flex;
   align-items: center;
@@ -227,7 +237,7 @@
 .search__box button:hover {
   background-color: #2980b9;
 }
-
+/* --- [TMT] action gh, đn --- */
 .action__icon {
   color: #ffffff;
   font-size: 20px;
@@ -241,6 +251,7 @@
   background-color: #34495e;
 }
 
+/* [TMT] eff khi di hover qua phần tử */
 .navbar__links a {
   position: relative;
   overflow: hidden;
@@ -262,6 +273,9 @@
 .navbar__links a:hover::after {
   transform: translateX(-50%) scaleX(0.8);
 }
+
+/* bắt đầu phần nội dung */
+/* nội dung 1 */
 
 .content1 {
   border: 2px solid #30363d;
@@ -309,6 +323,7 @@
   color: white;
 }
 
+/* nd 2*/
 .content2 {
   padding: 60px 40px;
   text-align: center;
@@ -339,11 +354,13 @@
   background: #334155;
   transform: translateY(-0.5rem);
 }
-
+/* nd 3*/
 .content3 {
   padding: 40px 150px;
   text-align: center;
 }
+
+/* rps cho nd3 */
 
 @media (max-width: 1200px) {
   .content3 {
@@ -435,4 +452,61 @@
 .button__sm:hover {
   background-color: #0066cc;
   transform: translateY(-2px);
+}
+
+.footer {
+  padding: 60px 10% 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-top: 1px solid #1e293b;
+}
+
+.footer-left {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 30px;
+}
+
+.footer-left p {
+  color: #94a3b8;
+  margin-top: 10px;
+}
+
+.footer-right {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.footer-col {
+  min-width: 200px;
+}
+
+.footer-col h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #e2e8f0;
+}
+
+.footer-col a {
+  display: block;
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+.footer-col a:hover {
+  color: #38bdf8;
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  color: #64748b;
+  margin-top: 40px;
+  font-size: 13px;
 }
