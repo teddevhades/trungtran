@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/web/login/login.css" />
+    <title>Đăng nhập</title>
+  </head>
+  <body>
+    <main class="dn__page">
+      <section class="dn__wrap">
+        <div class="dn__card">
+          <a href="/index.html" class="dn__logo">Gearophy</a>
+
+          <h1 class="dn__title">Đăng nhập</h1>
+          <p class="dn__sub">
+            Chào mừng trở lại! Vui lòng nhập thông tin để tiếp tục.
+          </p>
+
+          <form class="dn__form" action="#" method="post">
+            <label class="dn__label">
+              Email hoặc số điện thoại
+              <input
+                class="dn__input"
+                type="text"
+                name="user"
+                placeholder="you@example.com"
+                required
+              />
+            </label>
+
+            <label class="dn__label">
+              Mật khẩu
+              <input
+                class="dn__input"
+                type="password"
+                name="pass"
+                placeholder="••••••••"
+                required
+              />
+            </label>
+
+            <div class="dn__row">
+              <label class="dn__check">
+                <input type="checkbox" name="remember" /> Ghi nhớ tôi
+              </label>
+              <a href="#" class="dn__link">Quên mật khẩu?</a>
+            </div>
+
+            <button class="dn__btn" type="submit">Đăng nhập</button>
+          </form>
+
+          <p class="dn__hint">
+            Chưa có tài khoản?
+            <a href="#" class="dn__link">Đăng ký</a>
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
